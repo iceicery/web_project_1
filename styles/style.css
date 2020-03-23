@@ -15,9 +15,12 @@
 }*/
 
 .header {
+    border-color: blue;
+    border:solid;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
+    margin-bottom:100px ;
     /* parameters for the header section */
 }
 
@@ -83,8 +86,11 @@
 }
 
 .description{
+    border-color: blue;
+    border:solid;
     height:100vh;
     min-height: 600px;
+    margin-bottom:100px ;
 
 }
 
@@ -92,9 +98,8 @@
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 100px;
     margin-bottom: 100px;
-    display: flex;
+    display:flex; 
 }
 
 .column-left{
@@ -128,13 +133,15 @@
 .digits{
     height:100vh;
     min-height: 600px;
+    margin-bottom: 100px;
+    border-color: blue;
+    border:solid;
 }
 
 .digits__title{
     width:60%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 100px; 
     
     text-align: center;
     line-height: 69px;
@@ -146,7 +153,6 @@
     width: 60%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
 
     text-align: center;
     line-height: 34px;
@@ -165,7 +171,8 @@
 .digits__cell{
     margin-top:60px;
     width:250px;
-    padding-right:33px;
+    margin-top: 0;
+    margin-right: auto;
 }
 
 .digits-cell__heading{
@@ -177,12 +184,94 @@
     font-size: 18px;
 }
 
+.feynman{
+    border-color: blue;
+    border:solid;
+    height:790px;
+    position: relative;
+    /*height:100vh;
+    min-height: 600px;*/
+    margin-bottom: 90px;
+}
+
+.feynman__title{
+    width:775px;
+    margin-top:100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+    
+
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.feynman__subtitle{
+    margin-right: auto;
+    margin-left: auto;
+
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.feynman__link-size{
+    width: 120px;
+    height: 50px;
+
+    position: absolute;
+    right:48px;
+    top:50%;
+}
+.feynman__link{
+    margin-top:auto;
+    margin-bottom:auto;
+    line-height: 51px;
+    font-size: 36px;
+}
+
+.feynman__image{
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+
+    width:867px;
+    height:673px;
+    background-image: url('../images/feynman.png');
+    background-position:bottom left;
+    background-size:70%;
+    background-repeat: no-repeat;    
+}
+
+.kaufman{
+    border-color: blue;
+    border:solid;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    margin-bottom:90px ;
+}
+
+.footer{
+    border-color: blue;
+    border:solid;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+    margin-top: 60px;
+    margin-bottom:40px ;
+}
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
     height: 568px;
     width: 568px;
 }
+
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
