@@ -122,7 +122,59 @@
 
 .discription__paragragh{
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.digits{
+    height:100vh;
+    min-height: 600px;
+}
+
+.digits__title{
+    width:60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px; 
+    
+    text-align: center;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.digits__subtitle{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+
+    text-align: center;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.digits__table{
+    width:1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.digits__table-row{
+    display: flex;
+}
+.digits__cell{
+    margin-top:60px;
+    width:250px;
+    padding-right:33px;
+}
+
+.digits-cell__heading{
+    line-height: 1.15;
+    font-size: 24px;
+}
+.digits-cell__text{
+    line-height: 1.2;
+    font-size: 18px;
 }
 
 
