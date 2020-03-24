@@ -9,18 +9,31 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*div{
+
+.dark_theme-color{
+    background-color:#1F1F1F;
+    z-index: -2;
+}
+
+
+.white_text-color{
+    color:white;
+}
+
+
+div{
     border-style: solid;
     border-color:green;
-}*/
+}
 
 .header {
     border-color: blue;
-    border:solid;
+    border-style:solid;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    margin-bottom:100px ;
+    overflow: hidden;
+    margin-bottom: 100px;
     /* parameters for the header section */
 }
 
@@ -40,6 +53,7 @@
     display: flex;
     margin-left: 64px;
     padding: 70px 0;
+    z-index: 3;
 
     width:730px;
 
@@ -52,6 +66,7 @@
     position: absolute;
     left:64px;
     bottom:30px;
+    z-index:3;
 
     width:388px;
 
@@ -64,7 +79,7 @@
     position: absolute;
     bottom:0;
     right:50px;
-    z-index:-1;
+    z-index:1;
 
     height:608px ;
     width: 765px;
@@ -78,11 +93,16 @@
     position: absolute;
     top:64px;
     right:0;
-    z-index:-2;
+    z-index:0;
 
     height:568px;
     width:568px;
     background-color: blue;
+}
+
+.light_theme-color{
+    background-color: #F2F2F2;
+    z-index: -1;
 }
 
 .description{
@@ -90,8 +110,6 @@
     border:solid;
     height:100vh;
     min-height: 600px;
-    margin-bottom:100px ;
-
 }
 
 .discription_two-columns{
@@ -191,7 +209,6 @@
     position: relative;
     /*height:100vh;
     min-height: 600px;*/
-    margin-bottom: 90px;
 }
 
 .feynman__title{
@@ -252,18 +269,166 @@
     border:solid;
     height: 100vh;
     min-height: 600px;
-    max-height: 756px;
-    margin-bottom:90px ;
+    position: relative;
+    overflow: hidden;
+}
+
+.kaufman__image{
+    width: 877px;
+    height: 877px;
+    position: absolute;
+    top:0;
+    right:-210px;
+    z-index: -1;
+
+    background-image: url(../images/triangle.svg);
+    background-size: 90%;
+    transform: rotate(30deg);
+}
+
+.kaufman__title-size{
+    width: 60%;
+    margin-top: 90px;
+    margin-right:auto;
+    margin-left: auto;
+}
+
+.kaufman__title{
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.kaufman__subtitle-size{
+    width: 60%;
+    margin-top:20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.kaufman__subtitle{
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.kaufman__table{
+    width:1100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+.kaufman__cell{
+    margin-left: auto;
+    margin-right: auto;
+    width:200px;
+
+}
+
+.kaufman__cell-header{
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.kaufman__cell-text{
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+
 }
 
 .footer{
     border-color: blue;
     border:solid;
+
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
-    margin-top: 60px;
-    margin-bottom:40px ;
+}
+
+.footer__columns{
+    width:90%;
+    margin-top:60px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.footer__copyright{
+    width: 50%;
+    height: 200px;
+    margin:0;
+    position: relative;
+}
+
+.footer__info{
+    width: 25%;
+    height: 200px;
+    margin:0;
+}
+
+.footer__social{
+    width:auto;
+    height: 200px;
+    margin-left:120px;
+    margin-right: 0;
+}    
+
+.footer__logo{
+    width: 183px;
+    height: 35px;
+
+    background-image: url('../images/logo_white.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer__author{
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
+
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+}
+
+.footer__column-heading{
+    line-height: 45px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.footer__column-links{
+    
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 20px;
+    text-align: right;
+}
+
+.footer__social-text{
+    font-size: 10px;
+}
+
+.footer__social-fb{
+    height: 16px;
+    width: 16px;
+}
+
+.footer__social-ig{
+    height: 16px;
+    width: 16px;
+    background-image: url('../images/Instagram_white.svg');
 }
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
