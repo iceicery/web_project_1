@@ -11,17 +11,26 @@
 
 .light_theme-color{
     background-color: #F2F2F2;
-    z-index: -1;
 }
 
 .dark_theme-color{
     background-color:#1F1F1F;
-    z-index: -2;
 }
 
 
 .white_text-color{
     color:white;
+}
+
+.row_flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.layer_up{
+    position: relative;
+    z-index: 1;
 }
 
 
@@ -31,8 +40,6 @@ div{
 }
 
 .header {
-    border-color: blue;
-    border-style:solid;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
@@ -45,7 +52,6 @@ div{
     position: absolute;
     left:64px;
     top:30px;
-    z-index: 1;
 
     background-image: url(../images/logo.png);
     background-size: contain;
@@ -58,8 +64,7 @@ div{
     position: absolute;
     left: 64px ;
 
-    /*display: flex;
-    margin-left: 64px;*/
+
     padding: 90px 0;
     z-index: 1;
 
@@ -74,7 +79,6 @@ div{
     position: absolute;
     left:64px;
     bottom:30px;
-    z-index:1;
 
     width:388px;
 
@@ -87,7 +91,6 @@ div{
     position: absolute;
     bottom:0;
     right:50px;
-    z-index:1;
 
     height:608px ;
     width: 765px;
@@ -105,7 +108,6 @@ div{
     position: absolute;
     top:64px;
     right:0;
-    z-index:0;
 
     background-color: #2F80ED;
 
@@ -114,8 +116,6 @@ div{
 
 
 .description{
-    border-color:#2F80ED;
-    border:solid;
     height:100vh;
     min-height: 600px;
 }
@@ -125,7 +125,6 @@ div{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 100px;
-    display:flex; 
 }
 
 .column-left{
@@ -152,7 +151,6 @@ div{
 }
 
 .discription__paragragh{
-    margin-top: 0;
     margin-bottom: 30px;
 }
 
@@ -160,8 +158,6 @@ div{
     height:100vh;
     min-height: 600px;
     margin-bottom: 100px;
-    border-color:#2F80ED;
-    border:solid;
 }
 
 .digits__title{
@@ -191,14 +187,10 @@ div{
     margin-right: auto;
     margin-left: auto;
 }
-.digits__table-row{
-    display: flex;
-}
+
 .digits__cell{
     margin-top:60px;
     width:250px;
-    margin-top: 0;
-    margin-right: auto;
 }
 
 .digits-cell__heading{
@@ -211,8 +203,6 @@ div{
 }
 
 .feynman{
-    border-color:#2F80ED;
-    border:solid;
     height:790px;
     position: relative;
     /*height:100vh;
@@ -221,11 +211,11 @@ div{
 
 .feynman__title{
     width:775px;
+
     margin-top:100px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 70px;
-    
 
     line-height: 1.15;
     font-size: 120px;
@@ -233,7 +223,10 @@ div{
     text-align: center;
 }
 
+
 .feynman__subtitle{
+    width:500px;
+
     margin-right: auto;
     margin-left: auto;
 
@@ -241,6 +234,7 @@ div{
     font-size: 36px;
     font-weight: normal;
     text-align: center;
+    
 }
 
 .feynman__link-size{
@@ -251,7 +245,7 @@ div{
     right:48px;
     top:50%;
 }
-.feynman__link{
+.feynman__link-text{
     margin-top:auto;
     margin-bottom:auto;
     line-height: 51px;
@@ -262,7 +256,6 @@ div{
     position: absolute;
     left:0;
     bottom:0;
-    z-index: -1;
 
     width:867px;
     height:673px;
@@ -273,8 +266,6 @@ div{
 }
 
 .kaufman{
-    border-color:#2F80ED;
-    border:solid;
     height: 100vh;
     min-height: 600px;
     position: relative;
@@ -327,7 +318,6 @@ div{
     width:1100px;
     margin-right: auto;
     margin-left: auto;
-    display: flex;
 }
 
 .kaufman__cell{
@@ -352,9 +342,8 @@ div{
 }
 
 .footer{
-    border-color:#2F80ED ;
-    border:solid;
-
+   /* border-style: solid;
+    border-color: 1F1F1F;*/
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
@@ -366,7 +355,6 @@ div{
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
 }
 
 .footer__copyright{
@@ -428,25 +416,20 @@ div{
     font-size: 10px;
 }
 
-.footer__social-fb{
+.footer__social-img{
     height: 16px;
     width: 16px;
 }
 
-.footer__social-ig{
-    height: 16px;
-    width: 16px;
-    background-image: url('../images/Instagram_white.svg');
-}
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 
 
 
-/* including elements with key-value modifiers */
+/* including elements with key-value modifiers 
 .table__cell_theme_dark {
     width: 200px;
     color: white;
     margin-right: 0;
     margin-top: 80px;
-}
+}*/
