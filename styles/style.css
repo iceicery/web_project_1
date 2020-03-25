@@ -40,12 +40,15 @@
 }*/
 
 .header {
+    border:solid;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
     overflow: hidden;
     margin-bottom: 100px;
-    /* parameters for the header section */
+    /*Use a ﬂex property to center the element vertically */
+    display: flex;
+    align-items: center;
 }
 
 .header__logo{
@@ -60,14 +63,10 @@
     width: 145px;
 }
 
-.header__title{
-    position: absolute;
-    left: 64px ;
 
-
-    padding: 90px 0;
-    z-index: 1;
-
+.header__title{    
+    margin-left: 64px;
+    
     width:730px;
 
     font-size: 102px;
