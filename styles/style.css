@@ -177,6 +177,8 @@ div{
     width:60%;
     margin-right: auto;
     margin-left: auto;
+    margin-top:100px;
+    margin-bottom: 0;
     
     text-align: center;
     line-height: 69px;
@@ -188,6 +190,8 @@ div{
     width: 60%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
 
     text-align: center;
     line-height: 34px;
@@ -207,11 +211,21 @@ div{
 }
 
 .digits-cell__heading{
+    margin: 0;
+    padding: 0;
+
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
 }
 .digits-cell__text{
+    
+    margin-top:20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
@@ -232,6 +246,7 @@ div{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 70px;
+    padding:0;
 
     line-height: 1.15;
     font-size: 120px;
@@ -244,9 +259,12 @@ div{
 
 .feynman__subtitle{
     width:500px;
-
+    
     margin-right: auto;
     margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0;
 
     line-height: 51px;
     font-size: 36px;
@@ -255,22 +273,21 @@ div{
     
 }
 
-.feynman__link-size{
+.feynman__link{
     position: absolute;
     right:48px;
     top:50%;
-}
 
-.feynman__link-black{
+
     color:black;
     text-decoration: none;
-}
 
-.feynman__link-text{
     margin-top:auto;
     margin-bottom:auto;
     line-height: 51px;
     font-size: 36px;
+
+
 }
 
 .feynman__image{
@@ -281,8 +298,8 @@ div{
     width:867px;
     height:673px;
     background-image: url('../images/feynman.png');
+    background-size: 80%;
     background-position:bottom left;
-    background-size:70%;
     background-repeat: no-repeat;    
 }
 
