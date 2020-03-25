@@ -40,7 +40,6 @@
 }*/
 
 .header {
-    border:solid;
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
@@ -49,6 +48,8 @@
     /*Use a ﬂex property to center the element vertically */
     display: flex;
     align-items: center;
+
+    position: relative;
 }
 
 .header__logo{
@@ -222,6 +223,8 @@
     font-size: 120px;
     font-weight: bold;
     text-align: center;
+
+    position: relative;
 }
 
 
