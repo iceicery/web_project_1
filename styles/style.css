@@ -87,6 +87,10 @@
     font-weight: normal;
 }
 
+.page__link-blue{
+    color:#2F80ED;
+}
+
 .header__main-illustration{
     position: absolute;
     bottom:0;
@@ -411,6 +415,10 @@
     font-size: 18px;
     font-weight: 20px;
     text-align: right;
+}
+
+.page__link-white{
+    color:white;
 }
 
 .footer__social-text{
