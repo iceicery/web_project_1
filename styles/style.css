@@ -122,15 +122,11 @@ div{
 
 }
 
-
-
 .description{
-    /*
-    height:100vh;
-    min-height: 600px;*/
+    overflow: hidden;
 }
 
-.discription__two-columns{
+.two-columns{
     width: 80%;
     margin-right: auto;
     margin-left: auto;
@@ -141,20 +137,19 @@ div{
 .two-columns__brief{
     width:175px;
     margin-right: 20px;
-}
-.two-columns__main-text{
-    width: 80%;
-    min-width: 784px;
-}
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
 
-.two-columns__brief-text{
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
     color:#2F80ED;
-
-    padding:0;
-    margin:0;
+}
+.two-columns__main-text{
+    width: 80%;
+    min-width: 784px;
 }
 
 .two-columns__paragraph{
@@ -167,68 +162,89 @@ div{
     margin-left: 0;
 }
 
+.two-columns__span-accent{
+    font-weight: bold;
+}
+
+
 .digits{
     height:100vh;
     min-height: 600px;
     margin-bottom: 100px;
 }
 
-.digits__title{
-    width:60%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top:100px;
+.section-title{
+    width: 60%;
+    margin-top: 90px;
     margin-bottom: 0;
-    
-    text-align: center;
+    margin-right:auto;
+    margin-left: auto;
+    padding:0;
+
     line-height: 69px;
     font-size: 60px;
     font-weight: bold;
+    text-align: center;
 }
+/* 
+   this will be use again for kaufman section
+   but:
+   section-title in digits margin-top:100px 
+   section-title in kaufman margin-top:90px */
 
-.digits__subtitle{
+.section-subtitle{
     width: 60%;
+    margin-top:20px;
+    margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 0;
+    padding:0;
 
-    text-align: center;
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
-}
+    text-align: center;
+}   
 
-.digits__table{
+.table{
     width:1100px;
     margin-right: auto;
     margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.digits__cell{
+.table__cell{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table__cell_width-big{
     margin-top:60px;
-    width:250px;
+    width:250px
 }
 
-.digits-cell__heading{
-    margin: 0;
-    padding: 0;
-
+.table__heading{
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
-}
-.digits-cell__text{
-    
-    margin-top:20px;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
     margin-left: 0;
     margin-right: 0;
-    padding: 0;
+    padding:0;
+}
 
+.table__text{
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+    z-index: 1;
 }
 
 .feynman{
@@ -329,38 +345,9 @@ div{
     transform: rotate(30deg);
 }
 
-.section-title{
-    width: 60%;
-    margin-top: 90px;
-    margin-bottom: 0;
-    margin-right:auto;
-    margin-left: auto;
-    padding:0;
-
-    line-height: 69px;
-    font-size: 60px;
-    font-weight: bold;
-    text-align: center;
-}
-
 .section-title_theme-dark{
     background-color: #1F1F1F;
     color:white;
-}
-
-
-.section-subtitle{
-    width: 60%;
-    margin-top:20px;
-    margin-bottom: 0;
-    margin-right: auto;
-    margin-left: auto;
-    padding:0;
-
-    line-height: 34px;
-    font-size: 24px;
-    font-weight: normal;
-    text-align: center;
 }
 
 .section-subtitle_theme-dark{
@@ -368,59 +355,32 @@ div{
     color:white;
 }
 
-.table{
-    width:1100px;
-    margin-right: auto;
-    margin-left: auto;
-
-    display: flex;
-    justify-content: space-between;
-}
-
 .table_theme-dark{
     background-color: #1F1F1F;
     color:white;
 }
 
-.table__cell{
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
+
+
+.table__cell_width-small{
+    margin-top:80px;
     width:200px;
 }
+
+
 
 .table__cell_theme-dark{
     background-color: #1F1F1F;
 }
 
-.table__heading{
-    line-height: 1.15;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 0;
-    padding:0;
 
-    position: relative;
-    z-index: 1;
-}
 
 .table__heading_theme-dark{
+    position: relative;
+    z-index: 1;
     color:white;
 }
 
-.table__text{
-    line-height: 1.2;
-    font-size: 18px;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-
-    position: relative;
-    z-index: 1;
-}
 
 .table__text_theme-dark{
     color:white;
