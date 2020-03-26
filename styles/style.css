@@ -9,35 +9,12 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.light_theme-color{
-    background-color: #F2F2F2;
-}
-
-.dark_theme-color{
-    background-color:#1F1F1F;
-}
-
-
-.white_text-color{
-    color:white;
-}
-
-.row_flex{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.layer_up{
-    position: relative;
-    z-index: 1;
-}
-
-
+/*
 div{
     border-style: solid;
     border-color:green;
 }
+*/
 
 .header {
     height: 100vh;
@@ -52,6 +29,11 @@ div{
     position: relative;
 }
 
+.header_theme_light{
+    background-color: #F2F2F2;
+}
+
+
 .header__logo{
     position: absolute;
     left:64px;
@@ -62,6 +44,8 @@ div{
     background-repeat: no-repeat;
     height: 31px;
     width: 145px;
+
+    z-index: 1;
 }
 
 
@@ -74,9 +58,12 @@ div{
     font-size: 102px;
     line-height: 96px;
     font-weight: bold;
+    
+    position: relative;
+    z-index: 1;
 }
 
-.header__text{
+.header__subtitle{
     position: absolute;
     left:64px;
     bottom:30px;
@@ -89,9 +76,11 @@ div{
     font-size: 18px;
     line-height: 25px;
     font-weight: normal;
+
+    z-index: 1;
 }
 
-.header__link-blue{
+.header__link{
     color:#2F80ED;
     text-decoration: none;
 }
@@ -168,14 +157,13 @@ div{
 
 
 .digits{
-    height:100vh;
-    min-height: 600px;
+    overflow: hidden;
     margin-bottom: 100px;
 }
 
 .section-title{
     width: 60%;
-    margin-top: 90px;
+    
     margin-bottom: 0;
     margin-right:auto;
     margin-left: auto;
@@ -186,9 +174,11 @@ div{
     font-weight: bold;
     text-align: center;
 }
+
+.section-title_theme_light{
+    margin-top:100px;
+}
 /* 
-   this will be use again for kaufman section
-   but:
    section-title in digits margin-top:100px 
    section-title in kaufman margin-top:90px */
 
@@ -220,7 +210,7 @@ div{
     margin-right: auto;
 }
 
-.table__cell_width-big{
+.table__cell_theme_light{
     margin-top:60px;
     width:250px
 }
@@ -253,7 +243,7 @@ div{
     overflow: hidden;
 }
 
-.feynman_theme-light{
+.feynman_theme_light{
     background-color: #F2F2F2;
 }
 
@@ -329,7 +319,7 @@ div{
     overflow: hidden;
 }
 
-.kaufman_theme-dark{
+.kaufman_theme_dark{
     background-color: #1F1F1F;
 }
 
@@ -345,44 +335,39 @@ div{
     transform: rotate(30deg);
 }
 
-.section-title_theme-dark{
+.section-title_theme_dark{
+    margin-top: 90px;
     background-color: #1F1F1F;
     color:white;
 }
 
-.section-subtitle_theme-dark{
+.section-subtitle_theme_dark{
     background-color: #1F1F1F;
     color:white;
 }
 
-.table_theme-dark{
+.table_theme_dark{
     background-color: #1F1F1F;
     color:white;
 }
 
-
-
-.table__cell_width-small{
-    margin-top:80px;
-    width:200px;
+.table__cell_theme_dark{
+    width: 200px;
+    color: white;
+    margin-top: 80px;
 }
 
 
-
-.table__cell_theme-dark{
-    background-color: #1F1F1F;
-}
-
-
-
-.table__heading_theme-dark{
+.table__heading_theme_dark{
     position: relative;
     z-index: 1;
     color:white;
 }
 
 
-.table__text_theme-dark{
+.table__text_theme_dark{
+    position: relative;
+    z-index: 1;
     color:white;
 }
 
@@ -390,7 +375,7 @@ div{
     overflow: hidden;
 }
 
-.footer_theme-dark{
+.footer_theme_dark{
     background-color:#1F1F1F;
     color:white;
 }
@@ -491,10 +476,3 @@ div{
 
 
 
-/* including elements with key-value modifiers 
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-}*/
