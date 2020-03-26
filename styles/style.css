@@ -308,7 +308,11 @@ div{
     overflow: hidden;
 }
 
-.kaufman__image{
+.kaufman_theme-dark{
+    background-color: #1F1F1F;
+}
+
+.kaufman__triangle{
     width: 877px;
     height: 877px;
     position: absolute;
@@ -320,53 +324,71 @@ div{
     transform: rotate(30deg);
 }
 
-.kaufman__title-size{
+.section-title{
     width: 60%;
     margin-top: 90px;
     margin-bottom: 0;
     margin-right:auto;
     margin-left: auto;
     padding:0;
-}
 
-.kaufman__title{
     line-height: 69px;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
 }
 
+.section-title_theme-dark{
+    background-color: #1F1F1F;
+    color:white;
+}
 
-.kaufman__subtitle-size{
+
+.section-subtitle{
     width: 60%;
     margin-top:20px;
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
     padding:0;
-}
 
-.kaufman__subtitle{
     line-height: 34px;
     font-size: 24px;
     font-weight: normal;
     text-align: center;
 }
 
-.kaufman__table{
+.section-subtitle_theme-dark{
+    background-color: #1F1F1F;
+    color:white;
+}
+
+.table{
     width:1100px;
     margin-right: auto;
     margin-left: auto;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.kaufman__cell{
+.table_theme-dark{
+    background-color: #1F1F1F;
+    color:white;
+}
+
+.table__cell{
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     width:200px;
 }
 
-.kaufman__cell-header{
+.table__cell_theme-dark{
+    background-color: #1F1F1F;
+}
+
+.table__heading{
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
@@ -374,22 +396,36 @@ div{
     margin-bottom: 20px;
     margin-left: 0;
     margin-right: 0;
-    padding:0
+    padding:0;
+
+    position: relative;
+    z-index: 1;
 }
 
-.kaufman__cell-text{
+.table__heading_theme-dark{
+    color:white;
+}
+
+.table__text{
     line-height: 1.2;
     font-size: 18px;
     font-weight: normal;
     margin: 0;
     padding: 0;
+
+    position: relative;
+    z-index: 1;
+}
+
+.table__text_theme-dark{
+    color:white;
 }
 
 .footer{   
     overflow: hidden;
 }
 
-.footer_dark-theme{
+.footer_theme-dark{
     background-color:#1F1F1F;
     color:white;
 }
