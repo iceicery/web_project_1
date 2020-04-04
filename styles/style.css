@@ -138,10 +138,15 @@ div{
     margin-left: 0;
 }
 
+.two-columns__paragraph:last-child{
+    margin-bottom:0;
+}
+
+/*bad practice
 p:last-child{
     margin-bottom: 0;
 }
-
+*/
 
 .two-columns__span-accent{
     font-weight: bold;
@@ -230,6 +235,10 @@ p:last-child{
     z-index: 1;
 }
 
+.table__text:last-child{
+    margin-bottom: 0;
+}
+
 .feynman{
     height:790px;
     position: relative;
@@ -311,8 +320,6 @@ p:last-child{
     position: absolute;
     top:0;
     right:-210px;
-    /*contain should be used but not sure how to use it*/
-    contain:content ;
 }
 
 .section-title_theme_dark{
@@ -425,11 +432,11 @@ p:last-child{
     margin:0;
 }
 
-li{
+/*li{
     list-style: none;
     padding:0;
     margin:0;
-}
+}*/
 
 .footer__link{
     padding: 0;
