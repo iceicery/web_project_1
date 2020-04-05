@@ -1,0 +1,8 @@
+@import url(../__column/_content/footer__column_content_copyright.css);
+@import url(../__column/_content/footer__column_content_info.css);
+@import url(../__column/_content/footer__column_content_social.css);
+
+.footer__column{
+    margin:0;
+    padding:0;
+}

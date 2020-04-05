@@ -1,0 +1,17 @@
+@import url(./_theme/table__text_theme_dark.css);
+.table__text{
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top:0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 0;
+
+    position: relative;
+    z-index: 1;
+}
+.table__text:last-child{
+    margin-bottom: 0;
+}

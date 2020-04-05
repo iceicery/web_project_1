@@ -1,0 +1,18 @@
+@import url(./_theme/table__cell_theme_dark.css);
+
+.table__cell{
+    margin-top:60px;
+    width:250px; 
+    list-style: none;
+}
+
+/*the link doesn't work,that is why I add this
+1. check .table__cell_theme_dark code : no problem
+2. link to table.css: work 
+*/
+.table__cell_theme_dark{
+    width: 200px;
+    color: white;
+    margin-top: 80px;
+}
+
