@@ -8,4 +8,15 @@
 
     color:white;
     text-decoration: none;
+    
+    opacity: 1;
+    transition: opacity 0.25s ease-out;
+}
+
+.footer__link:hover{
+    opacity: 0.5;
+}
+
+li{
+    list-style: none;
 }
