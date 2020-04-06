@@ -1,3 +1,5 @@
+@import url(./_move/header__square-pic_move_rotation.css);
+
 .header__square-pic {
     height: 568px;
     width: 568px;
@@ -7,4 +9,7 @@
     right:0;
 
     background-color: #2F80ED;
+
+    transform: rotate(15deg);
 }
+

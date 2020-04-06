@@ -2,6 +2,7 @@
 @import url(../two-columns/__main-text/two-columns__main-text.css);
 @import url(../two-columns/__paragraph/two-columns__paragraph.css);
 @import url(../two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../two-columns/_place/two-columns_place_oakley.css);
 
 .two-columns{
     width: 80%;
