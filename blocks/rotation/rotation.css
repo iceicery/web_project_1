@@ -6,6 +6,6 @@
         transform: rotate(360deg);
     }
 }
-.header__square-pic__move_rotation{
+.rotation{
     animation: rotating 20s linear infinite ;
 }
