@@ -10,9 +10,8 @@ Project is created with:
 
 
 ## Plans for the next
-Add the actural links for the project.
-/
-Embed facebook page.
+* Add the actural links for the project.
+* Embed facebook page.
 
 ## Acknowledgments
 This project is part of Practicum web designer training.
