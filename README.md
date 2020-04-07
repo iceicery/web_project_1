@@ -5,6 +5,7 @@ This project is a website providing information of how to learn. HTML and CCS co
 
 ## Plans for the next
 Add the actural links for the project.
+//
 Embed facebook page.
 
 ## Acknowledgments

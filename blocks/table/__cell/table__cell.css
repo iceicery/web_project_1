@@ -6,10 +6,19 @@
     list-style: none;
 }
 
-/*Add the following bc the @ link doesn't work.
+/*
+Add the following bc the @ link doesn't work.
 1. check .table__cell_theme_dark code : no problem
 2. link to table.css: work 
-I don't know why.
+.....................................
+Feedback from the reviewer:
+Sadly this is common issue of @import. CSS import works only when decelerated before all blocks, and .table__cell block declaration will override it's own modifier. 
+One of our mentors made a demo for similar issue with solution: https://glitch.com/~how-to-increase-specificity-modifier
+From the Q&A through the link:
+Actually @import feature have some weird restrictions, and real0life enterprise developers do not use it. We will teach you another techics later.
+
+....I think I will wait for the futher lessons....
+
 */
 .table__cell_theme_dark{
     width: 200px;

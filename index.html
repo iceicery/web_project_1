@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./pages/style.css">
+    <link rel="stylesheet" href="./pages/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning how to learn</title>
 </head>
@@ -62,6 +62,7 @@
                         <h3 class="cards__title">Illusion of Competence</h3>
                         <p class="cards__description">Test yourself, write it down, tell other people, and repeat the process in different settings. Only then can you be truly certain you've understood something.</p>
                     </li>
+                    <!--Add an empty block for aligning cards__item of second row. If there is a better way to do this, I would love to learn.Thanks.-->
                     <li class="cards__item">
                     </li>
                 </ul>
@@ -69,15 +70,15 @@
             <section class="video">
                 <h2 class="section-title">TED talks</h2>
                 <p class="section-subtitle">For lovers of procrastination</p>
-                <div class="video__iframe">
-                    <iframe id="ytplayer" type="text/html" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allowfullscreen>
-                    </iframe>
-                    <iframe id="ytplayer" type="text/html" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allowfullscreen>
-                    </iframe>   
-                </div>             
+                <ul class="video__iframe">
+                    <li><iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen>
+                    </iframe></li>
+                    <li><iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allowfullscreen>
+                    </iframe></li>   
+                </ul>             
             </section>
             <section class="oakley">
-                <div class="two-columns two-columns_place_oakley">
+                <div class="two-columns">
                     <h2 class="two-columns__brief">Barbara Oakley’s story.</h2>
                     <div class="two-columns__main-text">
                         <p class="two-columns__paragraph">Math didn't come naturally to Barbara in childhood. She thought of herself as more of a 
@@ -87,7 +88,8 @@
                             engineering. In was during this time that she developed her learning methodology as she was 
                             forced to reprogram her brain for a different kind of learning. It turns out that when something 
                             doesn't come naturally to you, having to work hard to gain the knowledge that other people 
-                            may get at first glance gives you a deeper, more comprehensive understanding of the subject matter.</p>    
+                            may get at first glance gives you a deeper, more comprehensive understanding of the subject matter.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -141,10 +143,11 @@
                 <div class="khan__container">
                     <p class="khan__author">Salman Khan</p>
                     <h2 class="khan__title">The One World Schoolhouse</h2>
-                    <p class="khan__quote">Sal Khan's passion and innovation is transforming learning for millions of 
-                        students worldwide. The One World Schoolhouse is a must-read for all 
-                        who are committed to improving education so students everywhere can 
-                        gain the skills and knowledge to be successful in school, careers and life.</p>
+                    <blockquote class="khan__quote">Sal Khan's passion and innovation is transforming learning for<br>
+                        millions of students worldwide. The One World Schoolhouse is a must-read for all<br> 
+                        who are committed to improving education so students everywhere can<br> 
+                        gain the skills and knowledge to be successful in school, careers and life.
+                    </blockquote>
                     <p class="khan__quote-author">George Lucas</p>
                     <p class="khan__quote-author-subline">Filmmaker</p>
                     <div class="khan__book-container">
@@ -205,12 +208,20 @@
             <section class="resources">
                 <h2 class="section-title">Useful resources</h2>
                 <p class="section-subtitle">Further materials on learning techniques and hacks.</p>
-                <div class="resources__logo-zone">
-                    <img src="images/tedED.png" alt="TEDed" class="resources__logo">
-                    <img src="images/Medium.png" alt="Medium" class="resources__logo">
-                    <img src="images/dezeen.png" alt="dezeen" class="resources__logo">
-                    <img src="images/goodreads.png" alt="goodreads" class="resources__logo">          
-                </div>
+                <!--
+                    Feedback from the reviewer: It's valuable to use ul here for better semantics. 
+                    Don't forget about <li> and reset default browser styles like padding, list style and margin
+                    Also would be great if you wrap all images with <a>
+
+                    ....not sure why should we wrap all images with <a>
+                    ....I wonder if it is a good practice for all the img insert or just for the case here.
+                -->
+                <ul class="resources__logo-zone">
+                    <li><a><img src="images/tedED.png" alt="TEDed" class="resources__logo"></a></li>
+                    <li><a><img src="images/Medium.png" alt="Medium" class="resources__logo"></a></li>
+                    <li><a><img src="images/dezeen.png" alt="dezeen" class="resources__logo"></a></li>
+                    <li><a><img src="images/goodreads.png" alt="goodreads" class="resources__logo"></a></li>          
+                </ul>
             </section>
         </main>
         <footer class="footer">
