@@ -13,9 +13,11 @@
     margin-top:0;
     margin-bottom:0;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    display: grid;
+    grid-template-columns:repeat(3,240px);
+    column-gap: 100px;
+
+    list-style: none;
 }
 
 
