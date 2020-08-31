@@ -8,6 +8,8 @@ Project is created with:
 * HTML
 * CSS
 
+## Link
+https://iceicery.github.io/web_project_1/
 
 ## Plans for the next
 * Add the actural links for the project.
